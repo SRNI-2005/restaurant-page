@@ -6,7 +6,7 @@ image.src = "./image.png";
 image.alt = "image";
 image.classList = "image";
 
-aboutDOM.appendChild(image)
+aboutDOM.appendChild(image);
 
 export default aboutDOM;
 
