@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid red
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+header{
+    background-color: #016171;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header> #restaurant-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: max(1%, 10px);
+    color: #f4f4f4;
+    font-weight: 600;
+    font-size: min(1);
+
+}
+header img{
+    max-height: 40px;
+}
+header> nav{
+    height: 60%;
+    width: min(50%, 300px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>button{
+    padding: 0;
+    border: none;
+    background: none;
+    color: #f4f4f4;
+    font-size: min(15px, 150%);
+
+}
+#content{
+    height:100vh;
+    background-image: url("../images/restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-blend-mode: darken;
+    color: white;
+    padding: 3%;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+#introduction{
+    text-align: center;
+}
+
+#info-cards{
+    display: grid;
+    grid-template-rows: repeat(auto-fill);
+    height: 50vh;
+
+}
+
+.info-card{
+    display: flex;
+    justify-content: space-around;
+    width: min(60%,400px);
+}
+
+.menu-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(400px, 500px, 100%);
+}
+.item-image{
+    width: 50%;
+    height: 100%;
+}
+.item-info{
+    width: 50%;
+    text-align: center;
+}
+footer{
+    background-color: #016171;
+    color: #f4f4f4;
+    font-weight: 600;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
